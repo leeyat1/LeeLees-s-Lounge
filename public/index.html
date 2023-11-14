@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LeeLee's Lounge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/61ab4246c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="grid-1">
+        <h1 class="main-heading">Leelee's Lounge</h1>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href=""><i class="fa-solid fa-user"></i></a>
+    </div>
+</header>
+
+<nav class="nav-bar">
+    <ul>
+        <li><a href="freshFinds">New</a></li>
+        <li><a href="tops">Tops</a></li>
+        <li><a href="bottoms">Bottoms</a></li>
+        <li><a href="shoes">Shoes</a></li>
+    </ul>
+</nav>
+
+<div class="promo_photo">
+    <img src="img/sale.jpeg">
+</div>
+
+<div class="section-2">
+    <h1 class="sub-title">Shop By Category</h1>
+    <div class="shop-category">
+        <div class="circular-container">
+            <h1 class="circular-heading">Dresses</h1>
+        </div>
+        <div class="circular-container">
+            <h1 class="circular-heading">Tops</h1>
+        </div>
+        <div class="circular-container">
+            <h1 class="circular-heading">Robes</h1>
+        </div>
+        <div class="circular-container">
+            <h1 class="circular-heading">Foot Wear</h1>
+        </div>
+    </div>
+</div>
+
+<div id="products">
+    <div class="container">
+        <h1 class="sub-title">Featured Items</h1>
+        <div class="product-list">
+            <div class="product">
+                <img src="img/robe.jpg">
+                <h3 class="product-name">Robe</h3>
+                <p>$34.99</p>
+                <button onclick="addToCart(0, 'Robe', 34.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/dress.jpg">
+                <h3 class="product-name">Dress</h3>
+                <p>$69.99</p>
+                <button onclick="addToCart(2, 'Dress', 69.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/top.jpg">
+                <h3 class="product-name">Top</h3>
+                <p>$73.39</p>
+                <button onclick="addToCart(2, 'Top', 73.39)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/shoes.jpg">
+                <h3 class="product-name">Slippers</h3>
+                <p>$29.99</p>
+                <button onclick="addToCart(3, 'Shoes', 29.99)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="hidden">
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2023 LEELEE'S LOUNGE All rights reserved </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

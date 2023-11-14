@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="grid-1">
+    <h1 class="main-heading"><a href="/">Leelee's Lounge</a></h1>
+    <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+    <a href=""><i class="fa-solid fa-user"></i></a>
+</div>
+
+<nav class="nav-bar">
+    <ul>
+        <li><a href="freshFinds">New</a></li>
+        <li><a href="tops">Tops</a></li>
+        <li><a href="bottoms">Bottoms</a></li>
+        <li><a href="shoes">Shoes</a></li>
+    </ul>
+</nav>
+
+
+<div id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+</div>
+
+<script src="cart.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Fetch cart items and update the cart
+        fetch('/api/cart')
+            .then(response => response.json())
+            .then(cartItems => {
+                cartItems.forEach(item => {
+                    addToCart(item.productId, item.name, item.price);
+                });
+
+                // Call updateCart to display the cart items
+                updateCart();
+            });
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,170 @@
+*{
+    font-family: "Helvetica Neue";
+    color: #39241F;
+    background: #F0EEE0;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-heading{
+    font-size: 48px;
+    text-align: center;
+}
+
+.main-heading a{
+    text-decoration: none;
+}
+
+nav{
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 50px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+
+
+
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+}
+
+.promo_photo{
+    padding-bottom: 20px;
+
+}
+
+.sub-title{
+    text-align: center;
+}
+
+.circular-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+
+    transition: transform 0.5s;
+
+}
+
+.circular-container:hover {
+    transform: scale(1.1);
+}
+
+/* Style for the heading inside the circular container */
+.circular-heading {
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.shop-category{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: auto; /* Move the grid to the center horizontally */
+    margin-right: auto; /* Move the grid to the center horizontally */
+    max-width: 1200px;
+    padding-bottom: 20px;
+
+}
+
+.section-2{
+    padding-bottom: 20px;
+}
+
+
+.grid-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+
+
+}
+
+.fa-solid{
+    font-size: 35px;
+    color: #39241F;
+    padding-left: 50px;
+
+}
+
+.product {
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+    transition: transform 0.8s; /* Add a smooth transition effect */
+    border: 3px solid #39241F;
+}
+
+.product:hover img {
+    transform: scale(1.05); /* Increase the scale on hover */
+}
+
+
+.product-list{
+    padding: 25px;
+}
+
+.product-name{
+    padding-top: 20px;
+}
+
+.hidden{
+    display: none ;
+}
+
+footer {
+
+    color: #39241F;
+    text-align: center;
+    padding: 80px;
+    bottom: 0;
+    width: 100%;
+}
+
+
