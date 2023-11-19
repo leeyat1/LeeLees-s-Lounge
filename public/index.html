@@ -18,10 +18,10 @@
 
 <nav class="nav-bar">
     <ul>
-        <li><a href="freshFinds">New</a></li>
-        <li><a href="tops">Tops</a></li>
-        <li><a href="bottoms">Bottoms</a></li>
-        <li><a href="shoes">Shoes</a></li>
+        <li><a href="/">New</a></li>
+        <li><a href="#top">Tops</a></li>
+        <li><a href="#dress">Dresses</a></li>
+        <li><a href="#slippers">Shoes</a></li>
     </ul>
 </nav>
 
@@ -39,7 +39,7 @@
             <h1 class="circular-heading">Tops</h1>
         </div>
         <div class="circular-container">
-            <h1 class="circular-heading">Robes</h1>
+            <h1 class="circular-heading">Night Wear</h1>
         </div>
         <div class="circular-container">
             <h1 class="circular-heading">Foot Wear</h1>
@@ -56,25 +56,33 @@
                 <h3 class="product-name">Robe</h3>
                 <p>$34.99</p>
                 <button onclick="addToCart(0, 'Robe', 34.99)">Add to Cart</button>
+                <div id="message-container"></div>
             </div>
+
             <div class="product">
                 <img src="img/dress.jpg">
-                <h3 class="product-name">Dress</h3>
+                <h3 id="dress" class="product-name">Dress</h3>
                 <p>$69.99</p>
                 <button onclick="addToCart(2, 'Dress', 69.99)">Add to Cart</button>
+                <div id="message-container"></div>
             </div>
+
             <div class="product">
                 <img src="img/top.jpg">
-                <h3 class="product-name">Top</h3>
+                <h3 id="top" class="product-name">Top</h3>
                 <p>$73.39</p>
                 <button onclick="addToCart(2, 'Top', 73.39)">Add to Cart</button>
+                <div id="message-container"></div>
             </div>
+
             <div class="product">
                 <img src="img/slippers.jpg">
-                <h3 class="product-name">Slippers</h3>
+                <h3 id="slippers" class="product-name">Slippers</h3>
                 <p>$29.99</p>
                 <button onclick="addToCart(3, 'Shoes', 29.99)">Add to Cart</button>
+                <div id="message-container"></div>
             </div>
+
         </div>
     </div>
 </div>

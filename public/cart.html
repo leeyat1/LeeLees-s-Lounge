@@ -24,11 +24,27 @@
 </nav>
 
 
-<div id="cart">
-    <h2>Shopping Cart</h2>
-    <ul id="cart-items"></ul>
-    <p>Total: $<span id="cart-total">0</span></p>
+
+<h2 class="cart-heading">Shopping Cart</h2>
+
+<div class="cart">
+    <div>
+        <ul id="cart-items"></ul>
+        <p id="total"> Total: $<span id="cart-total">0</span></p>
+    </div>
 </div>
+
+
+
+<style>
+
+    .remove-button {
+        float: right;  /* Float the button to the right */
+        margin-left: 10px; /* Adjust the margin as needed to move the button to the right */
+    }    
+        
+
+</style>
 
 <script src="cart.js"></script>
 <script>

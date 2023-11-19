@@ -61,12 +61,15 @@ function updateCartDisplay(cartItems) {
     // Display cart items with Remove buttons
     cartItems.forEach((item, index) => {
         const listItem = document.createElement('li');
-        listItem.textContent = `${item.name} - $${item.price}`;
+        listItem.textContent = `${item.name } - $${ item.price }`;
 
         // Create a "Remove" button for each item
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
         removeButton.addEventListener('click', () => removeFromCart(index));
+
+
+        removeButton.classList.add('remove-button');
 
         // Append the button to the list item
         listItem.appendChild(removeButton);
