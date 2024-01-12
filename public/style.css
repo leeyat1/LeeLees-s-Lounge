@@ -1,7 +1,7 @@
 *{
     font-family: "Helvetica Neue";
-    color: #39241F;
-    background: #F0EEE0;
+    color: black;
+
     text-transform: uppercase;
     margin: 0;
     padding: 0;
@@ -9,29 +9,23 @@
 
 }
 
-.main-heading{
-    font-size: 48px;
-    text-align: center;
-}
-
-.main-heading a{
-    text-decoration: none;
-}
 
 nav{
     text-align: center;
     justify-content: space-between;
     flex-wrap: wrap;
     text-transform: uppercase;
-    padding-bottom: 20px;
-
-
+    padding-bottom: 10px;
+    
+    
+    
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 50px;
+    text-decoration: none;
 }
 
 nav ul li a{
@@ -42,6 +36,9 @@ nav ul li a{
 }
 
 
+.sale-banner{
+    height: 80vh;
+}
 
 
 .product-list{
@@ -53,13 +50,14 @@ nav ul li a{
 
 img{
     width: 100%;
-    border-radius: 10px;
     display: block;
     overflow: hidden;
 }
 
-.promo_photo{
-    padding-bottom: 20px;
+.promo-photo{
+    width: 300px;
+    height: 300px;
+    margin-bottom: -175px;
 
 }
 
@@ -77,8 +75,6 @@ img{
     justify-content: center;
     text-align: center;
     margin: auto;
-
-
     transition: transform 0.5s;
 
 }
@@ -114,17 +110,25 @@ img{
 
 .grid-1{
     display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
+    margin-left: 50px;
+}
 
+.user-icons{
+    display: flex;
+    margin-right: 50px;
+    margin-top: -80px;
+}
 
-
+.user-icons a {
+    margin-left: 10px; /* Add margin between the icons */
 }
 
 .fa-solid{
     font-size: 35px;
-    color: #39241F;
+    color: black;
     padding-left: 50px;
 
 }
@@ -139,7 +143,7 @@ img{
     display: block;
     overflow: hidden;
     transition: transform 0.8s; /* Add a smooth transition effect */
-    border: 3px solid #39241F;
+    
 }
 
 .product:hover img {
